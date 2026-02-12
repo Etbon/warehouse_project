@@ -10,16 +10,19 @@ This repository contains multiple ROS 2 packages used to:
 - Localize the robot using AMCL
 - Navigate to goals using Nav2 (planner + controller + behaviors + BT navigator)
 
-### Packages
-
-- `cartographer_slam/`  
+## Packages
+- `cartographer_slam/`
   Mapping (SLAM) configuration and launch to build a map in simulation.
 
-- `localization_server/`  
-  AMCL localization launch/config (supports sim/real map selection).
+- `map_server/`
+  Brings up Nav2 `map_server` to load a saved `map.yaml` and publish `/map` (plus lifecycle manager and RViz map display).
 
-- `path_planner_server/`  
+- `localization_server/`
+  AMCL localization launch/config (supports sim/real map selection). Uses `/map` + `/scan` to estimate robot pose.
+
+- `path_planner_server/`
   Nav2 navigation stack launch/config (supports sim/real configs + cmd_vel remap).
+
 
 ## Requirements
 
