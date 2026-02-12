@@ -51,7 +51,7 @@ def generate_launch_description():
       executable="amcl",
       name="amcl",
       output="screen",
-      parameters=[amcl_yaml],
+      parameters=[amcl_yaml, {"use_sim_time": use_sim_time}],
     ),
 
     # lifecycle manaeger node
