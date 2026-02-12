@@ -32,3 +32,9 @@ This repository contains multiple ROS 2 packages used to:
 
 ```bash
 source /opt/ros/humble/setup.bash
+```
+## Simulation  
+https://github.com/user-attachments/assets/c1dc6479-e50a-45f4-93ce-94d0320b1ea0
+
+
+
