@@ -36,6 +36,18 @@ This repository contains multiple ROS 2 packages used to:
 ```bash
 source /opt/ros/humble/setup.bash
 ```
+## How to Run
+### Run it in Simulation
+#### 1. Launch localization
+```
+source ~/ros2_ws/install/setup.bash
+ros2 launch localization_server localization.launch.py map_file:=warehouse_map_sim.yaml
+```
+#### 2. In another terminal, launch path planner
+```
+source ~/ros2_ws/install/setup.bash
+ros2 launch path_planner_server pathplanner.launch.py use_sim_time:=True
+```
 ## Simulation  
 https://github.com/user-attachments/assets/c1dc6479-e50a-45f4-93ce-94d0320b1ea0
 ## Real
