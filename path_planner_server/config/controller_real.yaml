@@ -85,7 +85,7 @@ local_costmap:
         enabled: true
         observation_sources: scan
         scan:
-          topic: /scan
+          topic: /scan_nav2
           data_type: "LaserScan"
           marking: true
           clearing: true

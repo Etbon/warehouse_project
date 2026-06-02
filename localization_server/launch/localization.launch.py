@@ -31,7 +31,7 @@ def generate_launch_description():
     # Set argument
     DeclareLaunchArgument(
       name="map_file",
-      default_value="warehouse_map_sim.yaml",
+      default_value="warehouse_map_keepout_sim.yaml",
       description="Map YAML filename inside localization/config",
     ),
     
